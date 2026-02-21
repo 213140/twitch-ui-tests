@@ -10,8 +10,6 @@ Automated UI testing with Python - target (Twitch)
 5. Run: `pytest -m ui -v`
 
 
-## WEB UI Test Flow
-
 ## Web UI Test Flow – Twitch Mobile (StarCraft II)
 | Step | Action | Page Object | Description | Expected Result |
 |------|--------|-------------|-------------|-----------------|
@@ -30,6 +28,10 @@ Automated UI testing with Python - target (Twitch)
 When opening Twitch mobile, two initial popups may appear:
 - "Keep using web" prompt  
 - Cookie consent banner  
-These are handled by the `handle_optional_popups()` method implemented in `BasePage`, which safely detects and closes them before continuing the test flow.
 
+![alt text](docs/image.png)
+
+⚠️ These are handled by the `handle_optional_popups()` method implemented in `BasePage`, which safely detects and closes them before continuing the test flow.
+
+## 🎯 Test Execution Demo
 ![Test Execution Demo](docs/demo_twitch_ui.gif)
